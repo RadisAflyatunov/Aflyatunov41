@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("photo_5294441709909956047_x.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("photo_5294441709909956048_x.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("aflyatunov41model.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("aflyatunov41model.tt")]
 
 

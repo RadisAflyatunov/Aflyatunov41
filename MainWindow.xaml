@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aflyatunov41"
         mc:Ignorable="d"
-        Title="Aflyatunov41" MinHeight="450" MinWidth="800" Icon="photo41.jpg" FontFamily="Comic Sans MS">
+        Title="Aflyatunov41" Height="450" Width="800" Icon="resources/icon.ico" MinHeight="600" MinWidth="1100" FontFamily="Comic Sans MS">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
@@ -13,8 +13,8 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
         <Image Source="photo41.jpg" HorizontalAlignment="Left"></Image>
-        <Button Content="Назад" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"></Button>
-        <TextBlock Text="41 Размер" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"></TextBlock>
-        <Frame Grid.Row="1" Name="MainFrame"></Frame>
+        <Button Content="Назад" Name="BtnBack" Click="BtnBack_Click" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"></Button>
+        <TextBlock Text="ООО 41 Размер" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"></TextBlock>
+        <Frame Grid.Row="1" Name="MainFrame" ContentRendered="MainFrame_ContentRendered" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

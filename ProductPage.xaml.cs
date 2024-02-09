@@ -23,6 +23,15 @@ namespace Aflyatunov41
         public ProductPage()
         {
             InitializeComponent();
+
+            var currentProduct = Aflyatunov41Entities.GetContext().Product.ToList();
+
+            ProductListView.ItemsSource = currentProduct;
+        }
+
+        private void ProductListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
