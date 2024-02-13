@@ -14,19 +14,10 @@ namespace Aflyatunov41
     
     public partial class PickPoint
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PickPoint()
-        {
-            this.Order = new HashSet<Order>();
-        }
-    
         public int IDPoint { get; set; }
         public string indexPoint { get; set; }
         public string city { get; set; }
         public string street { get; set; }
         public string number { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
     }
 }

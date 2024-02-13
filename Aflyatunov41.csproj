@@ -185,16 +185,6 @@
     <Resource Include="resources\А112Т4.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Aflyatunov41Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Aflyatunov41Model.edmx</DependentUpon>
-      <LastGenOutput>Aflyatunov41Model.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Aflyatunov41Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Aflyatunov41Model.edmx</DependentUpon>
-      <LastGenOutput>Aflyatunov41Model.cs</LastGenOutput>
-    </Content>
     <Resource Include="Товар_import\B320R5.jpg" />
     <Resource Include="Товар_import\D329H3.jpg" />
     <Resource Include="Товар_import\D572U8.jpg" />
@@ -205,6 +195,18 @@
     <Resource Include="Товар_import\H782T5.jpg" />
     <Resource Include="Товар_import\J384T6.jpg" />
     <Resource Include="Товар_import\А112Т4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aflyatunov41Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Aflyatunov41Model.edmx</DependentUpon>
+      <LastGenOutput>Aflyatunov41Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Aflyatunov41Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Aflyatunov41Model.edmx</DependentUpon>
+      <LastGenOutput>Aflyatunov41Model.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,7 +8,7 @@
           <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
           <ScalarProperty Name="OrderDeliveryDate" ColumnName="OrderDeliveryDate" />
           <ScalarProperty Name="OrderPickupPoint" ColumnName="OrderPickupPoint" />
-          <ScalarProperty Name="OrderClient" ColumnName="OrderClient" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="OrderReceiveCode" ColumnName="OrderReceiveCode" />
           <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
         </MappingFragment>

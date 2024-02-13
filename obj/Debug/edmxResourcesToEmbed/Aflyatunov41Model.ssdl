@@ -8,7 +8,7 @@
     <Property Name="OrderStatus" Type="nvarchar(max)" Nullable="false" />
     <Property Name="OrderDeliveryDate" Type="date" Nullable="false" />
     <Property Name="OrderPickupPoint" Type="int" Nullable="false" />
-    <Property Name="OrderClient" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="UserID" Type="int" />
     <Property Name="OrderReceiveCode" Type="nvarchar(max)" Nullable="false" />
     <Property Name="OrderDate" Type="date" Nullable="false" />
   </EntityType>
@@ -91,15 +91,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Order_PickPoint">
-    <End Role="PickPoint" Type="Self.PickPoint" Multiplicity="1" />
+  <Association Name="FK_Order_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
     <End Role="Order" Type="Self.Order" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="PickPoint">
-        <PropertyRef Name="IDPoint" />
+      <Principal Role="User">
+        <PropertyRef Name="UserID" />
       </Principal>
       <Dependent Role="Order">
-        <PropertyRef Name="OrderPickupPoint" />
+        <PropertyRef Name="UserID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -130,8 +130,8 @@
       <End Role="Role" EntitySet="Role" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>
-    <AssociationSet Name="FK_Order_PickPoint" Association="Self.FK_Order_PickPoint">
-      <End Role="PickPoint" EntitySet="PickPoint" />
+    <AssociationSet Name="FK_Order_User" Association="Self.FK_Order_User">
+      <End Role="User" EntitySet="User" />
       <End Role="Order" EntitySet="Order" />
     </AssociationSet>
     <AssociationSet Name="FK_OrderProduct_Product" Association="Self.FK_OrderProduct_Product">

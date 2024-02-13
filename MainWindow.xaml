@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aflyatunov41"
         mc:Ignorable="d"
-        Title="Aflyatunov41" Height="450" Width="800" Icon="resources/icon.ico" MinHeight="600" MinWidth="1100" FontFamily="Comic Sans MS">
+        Title="Aflyatunov41" Height="450" Width="800" Icon="resources/icon.ico" MinHeight="600" MinWidth="1200" FontFamily="Comic Sans MS">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
