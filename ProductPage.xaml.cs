@@ -22,9 +22,30 @@ namespace Aflyatunov41
     {
         int mCount = 0;
         List<Product> TableList;
-        public ProductPage()
+        public ProductPage(User user)
         {
             InitializeComponent();
+            if (user != null)
+            {
+                FIOTB.Text = user.UserSurname + " " + user.UserName + " " + user.UserPatronymic;
+                switch (user.UserRole)
+                {
+                    case 1:
+                        RoleTB.Text = "Администратор"; break;
+                    case 2:
+                        RoleTB.Text = "Клиент"; break;
+                    case 3:
+                        RoleTB.Text = "Менеджер"; break;
+                }
+                URole.Visibility = Visibility.Visible;
+                RoleTB.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                FIOTB.Text = "Гость";
+                URole.Visibility = Visibility.Hidden;
+                RoleTB.Visibility = Visibility.Hidden;
+            }
 
             List<Product> currentProducts = Aflyatunov41Entities.GetContext().Product.ToList();
             ProductListView.ItemsSource = currentProducts;

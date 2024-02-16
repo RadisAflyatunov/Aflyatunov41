@@ -79,6 +79,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Aflyatunov41Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="AuthPage.xaml.cs">
+      <DependentUpon>AuthPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="Order.cs">
       <DependentUpon>Aflyatunov41Model.tt</DependentUpon>
@@ -99,6 +102,10 @@
       <DependentUpon>Aflyatunov41Model.tt</DependentUpon>
     </Compile>
     <Page Include="AddEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AuthPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
